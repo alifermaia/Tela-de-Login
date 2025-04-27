@@ -1,0 +1,268 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   
+}
+
+body{
+    background-image: url(backgroundnotebook.png);
+}
+
+    section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        height: 100vh;
+
+        font-family: "Rubik";
+    }
+
+        #container{ 
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            
+            width: 500px;
+            height: 500px;
+
+            border-radius: 10px;
+            
+            background-color: white;
+            box-shadow: 0.2px 0.2px 15px grey;
+        }
+
+            #bemvindo{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                padding: 10px;
+            }
+
+                #bemvindo h1{
+                    font-size: 40px;
+                    margin-bottom: 30px;
+                }
+
+                #bemvindo h2{
+                    font-size: 25px;
+                }
+
+            form{
+                margin-top: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+                form label{
+                    font-size: 18px;
+                }
+
+                form input{
+                    height: 50px;
+                    padding-left: 10px;
+                    margin-top: 5px;
+                    border-radius: 5px;
+                    border: none;
+
+                    background-color: rgb(232, 232, 232);
+                }
+
+                input::placeholder{
+                    font-size: 15px;
+                    font-weight: 500;
+                    font-family: "Rubik";
+                }
+
+    
+
+                form .inputs{
+                    display: flex;
+                    flex-direction: column;
+                    width: 80%;
+                    
+                    margin-bottom: 15px;
+                }
+
+                form button{
+                    width: 80%;
+                    margin-top: 15px;
+
+                    font-family: "Rubik";
+                    font-size: 18px;
+
+                    border: none;
+                    border-radius: 5px;
+                    height: 50px;
+
+                    color: white;
+
+                    background-color: blue;
+                    box-shadow: 0.5px 0.5px 5px blue;
+                }
+
+                form button:hover{
+                    cursor: pointer;
+                    transform: scale(1.025);
+                    transform: translateY(-2px);
+                    transition-duration: 0.25s;
+
+
+                    color: black;
+                    background-color: silver;
+                    box-shadow: 0.5px 0.5px 5px silver;
+                }
+
+            #senha{
+                width: 75%;
+                margin: 18px auto ;
+                display: flex;
+                justify-content: space-between;
+            }
+
+                #senha a{
+                    font-size: 18px;
+                    text-decoration: none;
+                    color: blue;
+                }
+
+                #senha a:hover{
+                    transform: scale(1.025);
+                    transition-duration: 0.2s;
+
+                    color: grey;
+                }
+                
+
+@media only screen and (max-width: 1200px){
+    section{
+        background-image: url(backgroundtablet.png);
+    }
+
+            
+        #container{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            width: 500px;
+            height: 500px;
+        }
+
+            #bemvindo{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+                #bemvindo h1{
+                    font-size: 35px;
+                }
+
+                #bemvindo h2{
+                    font-size: 20px;
+                }
+
+            form{
+                padding-left: 10px;
+                margin-top: 2px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }    
+            
+                form label{
+                    font-size: 18px;
+                }
+
+                form input{
+                    height: 50px;
+                    margin-top: 5px;
+                    border-radius: 5px;
+                    border: none;
+
+                    background-color: rgb(232, 232, 232);
+                }
+
+                form .inputs{
+                    display: flex;
+                    flex-direction: column;
+                    width: 80%;
+                    
+                    margin-bottom: 15px;
+                }
+
+
+                
+                input::placeholder{
+                    font-size: 17px;
+                    font-weight: 500;
+                    font-family: "Rubik";
+                }
+
+                form button{
+                    height: 50px;
+                    font-size: 20px;
+                }
+
+         
+
+            #senha a{
+                font-size: 18px;
+                text-decoration: none;
+                color: blue;
+            }
+
+            #senha a:hover{
+                transform: scale(1.025);
+                transition-duration: 0.2s;
+
+                color: grey;
+            }
+            
+
+}
+                
+                
+
+@media only screen and (max-width: 600px) {
+    section{
+        background-image: url(background.png);
+    }
+
+        #container{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            width: 90vw;
+            height: 60vh;
+        }
+
+            #bemvindo{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                padding: 10px;
+            }
+
+                #bemvindo h1{
+                    font-size: 30px;
+                    margin-bottom: 10px;
+                }
+
+                #bemvindo h2{
+                    font-size: 18px;
+                }
+
+                #senha a{
+                    font-size: 15px;
+                }    
+}
+
+
+
